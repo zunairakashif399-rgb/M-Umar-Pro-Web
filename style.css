@@ -1,0 +1,429 @@
+css
+/* ================= GENERAL ================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f8faff;
+    color: #1d2939;
+    line-height: 1.6;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+/* ================= HEADER ================= */
+
+header {
+    background-color: white;
+    border-bottom: 1px solid #e5e7eb;
+}
+
+.navbar {
+    width: 90%;
+    max-width: 1200px;
+    min-height: 75px;
+    margin: auto;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    font-size: 26px;
+    font-weight: bold;
+    color: #172554;
+}
+
+.logo span {
+    color: #2563eb;
+}
+
+.nav-links {
+    list-style: none;
+
+    display: flex;
+    gap: 30px;
+}
+
+.nav-links a {
+    color: #344054;
+    font-size: 15px;
+    font-weight: 500;
+
+    transition: 0.3s;
+}
+
+.nav-links a:hover {
+    color: #2563eb;
+}
+
+.nav-btn,
+.primary-btn,
+.cta-btn {
+    display: inline-block;
+    background-color: #2563eb;
+    color: white;
+    padding: 12px 22px;
+    border-radius: 8px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.nav-btn:hover,
+.primary-btn:hover,
+.cta-btn:hover {
+    background-color: #1d4ed8;
+}
+
+
+/* ================= HERO SECTION ================= */
+
+.hero {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+    padding: 80px 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 50px;
+}
+
+.hero-content {
+    width: 50%;
+}
+
+.small-title {
+    color: #2563eb;
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.hero h1 {
+    font-size: 48px;
+    line-height: 1.2;
+    color: #172554;
+    margin-bottom: 20px;
+}
+
+.hero-text {
+    color: #667085;
+    font-size: 17px;
+    margin-bottom: 30px;
+    max-width: 520px;
+}
+
+.hero-image {
+    width: 45%;
+}
+
+.hero-image img {
+    width: 100%;
+    height: 360px;
+    object-fit: cover;
+    border-radius: 15px;
+}
+
+
+/* ================= ABOUT SECTION ================= */
+
+.about {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+    padding: 80px 0;
+
+    display: flex;
+    align-items: center;
+    gap: 60px;
+}
+
+.about-image {
+    width: 45%;
+}
+
+.about-image img {
+    width: 100%;
+    height: 330px;
+    object-fit: cover;
+    border-radius: 15px;
+}
+
+.about-content {
+    width: 50%;
+}
+
+.about h2,
+.section-heading h2 {
+    color: #172554;
+    font-size: 34px;
+    margin-bottom: 15px;
+}
+
+.about-content p:not(.small-title) {
+    color: #667085;
+    margin-bottom: 15px;
+}
+
+.about-content .primary-btn {
+    margin-top: 10px;
+}
+
+
+/* ================= SERVICES SECTION ================= */
+
+.services {
+    background-color: white;
+    padding: 80px 5%;
+}
+
+.section-heading {
+    text-align: center;
+    max-width: 650px;
+    margin: 0 auto 45px;
+}
+
+.section-heading p:last-child {
+    color: #667085;
+}
+
+.service-container {
+    max-width: 1200px;
+    margin: auto;
+
+    display: flex;
+    gap: 25px;
+}
+
+.service-card {
+    background-color: #f8faff;
+    padding: 30px;
+    text-align: center;
+
+    border: 1px solid #e5e7eb;
+    border-radius: 12px;
+
+    flex: 1;
+}
+
+.service-icon {
+    font-size: 40px;
+    margin-bottom: 15px;
+}
+
+.service-card h3 {
+    color: #172554;
+    margin-bottom: 10px;
+}
+
+.service-card p {
+    color: #667085;
+}
+
+
+/* ================= FEATURES SECTION ================= */
+
+.features {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+    padding: 80px 0;
+}
+
+.feature-container {
+    display: flex;
+    gap: 25px;
+}
+
+.feature {
+    background-color: white;
+    border: 1px solid #e5e7eb;
+    border-radius: 12px;
+    padding: 25px;
+
+    display: flex;
+    gap: 18px;
+    flex: 1;
+}
+
+.feature-icon {
+    width: 40px;
+    height: 40px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-color: #dbeafe;
+    color: #2563eb;
+
+    border-radius: 50%;
+    font-weight: bold;
+}
+
+.feature h3 {
+    color: #172554;
+    margin-bottom: 8px;
+}
+
+.feature p {
+    color: #667085;
+    font-size: 14px;
+}
+
+
+/* ================= CTA SECTION ================= */
+
+.cta {
+    background-color: #172554;
+    color: white;
+    text-align: center;
+
+    padding: 70px 20px;
+}
+
+.cta h2 {
+    font-size: 34px;
+    margin-bottom: 12px;
+}
+
+.cta p {
+    margin-bottom: 25px;
+    color: #dbeafe;
+}
+
+.cta-btn {
+    background-color: #2563eb;
+}
+
+
+/* ================= FOOTER ================= */
+
+footer {
+    background-color: #0f172a;
+    color: white;
+    padding: 50px 5% 20px;
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: auto;
+
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+.footer-content > div {
+    flex: 1;
+}
+
+.footer-content h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.footer-content h3 span {
+    color: #60a5fa;
+}
+
+.footer-content h4 {
+    margin-bottom: 12px;
+}
+
+.footer-content p {
+    color: #cbd5e1;
+    font-size: 14px;
+}
+
+.footer-content ul {
+    list-style: none;
+}
+
+.footer-content li {
+    margin-bottom: 6px;
+}
+
+.footer-content a {
+    color: #cbd5e1;
+}
+
+.footer-content a:hover {
+    color: white;
+}
+
+.student-info {
+    max-width: 1200px;
+    margin: 40px auto 0;
+    padding-top: 20px;
+
+    border-top: 1px solid #334155;
+
+    text-align: center;
+    color: #94a3b8;
+    font-size: 13px;
+}
+
+
+/* ================= RESPONSIVE ================= */
+
+@media (max-width: 800px) {
+
+    .navbar {
+        flex-direction: column;
+        padding: 20px 0;
+        gap: 15px;
+    }
+
+    .nav-links {
+        gap: 15px;
+    }
+
+    .hero,
+    .about {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero-content,
+    .about-content,
+    .hero-image,
+    .about-image {
+        width: 100%;
+    }
+
+    .hero h1 {
+        font-size: 36px;
+    }
+
+    .hero-text {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .service-container,
+    .feature-container,
+    .footer-content {
+        flex-direction: column;
+    }
+
+    .about-content .primary-btn {
+        margin-bottom: 10px;
+    }
+}
+
